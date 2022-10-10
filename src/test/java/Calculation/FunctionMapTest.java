@@ -38,7 +38,7 @@ public class FunctionMapTest {
         return Arrays.asList(new Object[][]{
 
                 {ADDITION, 3, 5, 8},
-                {SUBTRACTION, 5, 15, 11},
+                {SUBTRACTION, 5, 15, 10},
                 {MULTIPLICATION, 33, 3, 99},
                 {DIVISION, 5, 45, 9}
 
@@ -56,7 +56,7 @@ public class FunctionMapTest {
     @Test
     public void calculate() {
 
-        assertEquals(expectedResult, calculatorMap.calculate(operator, a, b));
+        assertEquals(expectedResult, calculatorMap.calculate(operator, a, b), 0);
 
     }
 }
